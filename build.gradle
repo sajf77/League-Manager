@@ -1,0 +1,23 @@
+buildscript {
+    ext {
+        compileSdk = 35
+        minSdk = 26
+        targetSdk = 35
+        composeBom = '2024.12.01'
+        roomVersion = '2.6.1'
+        lifecycleVersion = '2.8.7'
+        navVersion = '2.8.5'
+        gsonVersion = '2.11.0'
+    }
+}
+
+plugins {
+    id 'com.android.application' version '8.7.3' apply false
+    id 'org.jetbrains.kotlin.android' version '2.1.0' apply false
+    id 'org.jetbrains.kotlin.plugin.compose' version '2.1.0' apply false
+    id 'com.google.devtools.ksp' version '2.1.0-1.0.29' apply false
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,172 @@
+package com.sajad.leaguemanager.data
+
+object TeamDatabase {
+    val leagueNames = listOf("Premier League", "LaLiga", "Bundesliga", "Serie A", "Ligue 1", "Eredivisie", "Primeira Liga")
+    val leagueIcons = listOf("🏴󠁧󠁢󠁥󠁮󠁧󠁿", "🇪🇸", "🇩🇪", "🇮🇹", "🇫🇷", "🇳🇱", "🇵🇹")
+
+    val leagueLogos: Map<String, String> = mapOf(
+        "Premier League" to "logos/Leagues/england_english-premier-league_128x128.football-logos.cc.png",
+        "LaLiga" to "logos/Leagues/spain_la-liga_128x128.football-logos.cc.png",
+        "Bundesliga" to "logos/Leagues/germany_bundesliga_128x128.football-logos.cc.png",
+        "Serie A" to "logos/Leagues/italy_serie-a_128x128.football-logos.cc.png",
+        "Ligue 1" to "logos/Leagues/france_ligue-1_128x128.football-logos.cc.png",
+        "Eredivisie" to "logos/Leagues/netherlands_eredivisie_128x128.football-logos.cc.png",
+        "Primeira Liga" to "logos/Leagues/portugal_primeira-liga_128x128.football-logos.cc.png",
+    )
+
+    val allTeams = listOf(
+        // Premier League
+        TeamData("Arsenal", "ARS", "logos/PL/arsenal.football-logos.cc.png", "Premier League"),
+        TeamData("Chelsea", "CHE", "logos/PL/chelsea.football-logos.cc.png", "Premier League"),
+        TeamData("Liverpool", "LIV", "logos/PL/liverpool.football-logos.cc.png", "Premier League"),
+        TeamData("Manchester City", "MCI", "logos/PL/manchester-city.football-logos.cc.png", "Premier League"),
+        TeamData("Manchester United", "MUN", "logos/PL/manchester-united.football-logos.cc.png", "Premier League"),
+        TeamData("Tottenham Hotspur", "TOT", "logos/PL/tottenham.football-logos.cc.png", "Premier League"),
+        // LaLiga
+        TeamData("Atlético Madrid", "ATM", "logos/LaLiga/atletico-madrid.football-logos.cc.png", "LaLiga"),
+        TeamData("FC Barcelona", "BAR", "logos/LaLiga/barcelona.football-logos.cc.png", "LaLiga"),
+        TeamData("Real Madrid", "RMA", "logos/LaLiga/real-madrid.football-logos.cc.png", "LaLiga"),
+        TeamData("Sevilla", "SEV", "logos/LaLiga/sevilla.football-logos.cc.png", "LaLiga"),
+        TeamData("Valencia", "VAL", "logos/LaLiga/valencia.football-logos.cc.png", "LaLiga"),
+        // Bundesliga
+        TeamData("Bayer Leverkusen", "B04", "logos/Bundesliga/bayer-leverkusen.football-logos.cc.png", "Bundesliga"),
+        TeamData("Bayern München", "BAY", "logos/Bundesliga/bayern-munchen.football-logos.cc.png", "Bundesliga"),
+        TeamData("Borussia Dortmund", "BVB", "logos/Bundesliga/borussia-dortmund.football-logos.cc.png", "Bundesliga"),
+        TeamData("Schalke 04", "S04", "logos/Bundesliga/schalke-04.football-logos.cc.png", "Bundesliga"),
+        // Serie A
+        TeamData("Inter Milan", "INT", "logos/SerieA/inter.football-logos.cc.png", "Serie A"),
+        TeamData("Juventus", "JUV", "logos/SerieA/juventus.football-logos.cc.png", "Serie A"),
+        TeamData("AC Milan", "MIL", "logos/SerieA/milan.football-logos.cc.png", "Serie A"),
+        TeamData("Napoli", "NAP", "logos/SerieA/napoli.football-logos.cc.png", "Serie A"),
+        TeamData("AS Roma", "ROM", "logos/SerieA/roma.football-logos.cc.png", "Serie A"),
+        // Ligue 1
+        TeamData("AS Monaco", "MON", "logos/Ligue1/as-monaco.football-logos.cc.png", "Ligue 1"),
+        TeamData("Olympique Lyonnais", "OL", "logos/Ligue1/lyon.football-logos.cc.png", "Ligue 1"),
+        TeamData("Olympique Marseille", "OM", "logos/Ligue1/marseille.football-logos.cc.png", "Ligue 1"),
+        TeamData("Paris Saint-Germain", "PSG", "logos/Ligue1/paris-saint-germain.football-logos.cc.png", "Ligue 1"),
+        // Eredivisie
+        TeamData("Ajax", "AJA", "logos/Netherlands/ajax.football-logos.cc.png", "Eredivisie"),
+        TeamData("Feyenoord", "FEY", "logos/Netherlands/feyenoord.football-logos.cc.png", "Eredivisie"),
+        TeamData("PSV Eindhoven", "PSV", "logos/Netherlands/psv.football-logos.cc.png", "Eredivisie"),
+        // Primeira Liga
+        TeamData("SL Benfica", "SLB", "logos/Portugal/benfica.football-logos.cc.png", "Primeira Liga"),
+        TeamData("FC Porto", "POR", "logos/Portugal/fc-porto.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Sporting CP", "SCP", "logos/Portugal/sporting-cp.football-logos.cc.png", "Primeira Liga"),
+
+        // ---- Appended teams (new index positions, safe for existing leagues) ----
+
+        // Premier League
+        TeamData("Aston Villa", "AVL", "logos/PL/aston-villa.football-logos.cc.png", "Premier League"),
+        TeamData("Bournemouth", "BOU", "logos/PL/bournemouth.football-logos.cc.png", "Premier League"),
+        TeamData("Brentford", "BRE", "logos/PL/brentford.football-logos.cc.png", "Premier League"),
+        TeamData("Brighton", "BHA", "logos/PL/brighton.football-logos.cc.png", "Premier League"),
+        TeamData("Coventry City", "COV", "logos/PL/coventry-city.football-logos.cc.png", "Premier League"),
+        TeamData("Crystal Palace", "CRY", "logos/PL/crystal-palace.football-logos.cc.png", "Premier League"),
+        TeamData("Everton", "EVE", "logos/PL/everton.football-logos.cc.png", "Premier League"),
+        TeamData("Fulham", "FUL", "logos/PL/fulham.football-logos.cc.png", "Premier League"),
+        TeamData("Hull City", "HUL", "logos/PL/hull-city.football-logos.cc.png", "Premier League"),
+        TeamData("Ipswich", "IPS", "logos/PL/ipswich.football-logos.cc.png", "Premier League"),
+        TeamData("Leeds United", "LEE", "logos/PL/leeds-united.football-logos.cc.png", "Premier League"),
+        TeamData("Newcastle", "NEW", "logos/PL/newcastle.football-logos.cc.png", "Premier League"),
+        TeamData("Nottingham Forest", "NFO", "logos/PL/nottingham-forest.football-logos.cc.png", "Premier League"),
+        TeamData("Sunderland", "SUN", "logos/PL/sunderland.football-logos.cc.png", "Premier League"),
+        // LaLiga
+        TeamData("Athletic Club", "ATH", "logos/LaLiga/athletic-club.football-logos.cc.png", "LaLiga"),
+        TeamData("Celta Vigo", "CEL", "logos/LaLiga/celta.football-logos.cc.png", "LaLiga"),
+        TeamData("Deportivo La Coruña", "DEP", "logos/LaLiga/deportivo-la-coruna.football-logos.cc.png", "LaLiga"),
+        TeamData("Elche", "ELC", "logos/LaLiga/elche.football-logos.cc.png", "LaLiga"),
+        TeamData("Espanyol", "ESP", "logos/LaLiga/espanyol.football-logos.cc.png", "LaLiga"),
+        TeamData("Getafe", "GET", "logos/LaLiga/getafe.football-logos.cc.png", "LaLiga"),
+        TeamData("Levante", "LEV", "logos/LaLiga/levante.football-logos.cc.png", "LaLiga"),
+        TeamData("Málaga", "MAL", "logos/LaLiga/malaga.football-logos.cc.png", "LaLiga"),
+        TeamData("Osasuna", "OSA", "logos/LaLiga/osasuna.football-logos.cc.png", "LaLiga"),
+        TeamData("Racing Santander", "RAC", "logos/LaLiga/racing.football-logos.cc.png", "LaLiga"),
+        TeamData("Rayo Vallecano", "RAY", "logos/LaLiga/rayo-vallecano.football-logos.cc.png", "LaLiga"),
+        TeamData("Real Betis", "BET", "logos/LaLiga/real-betis.football-logos.cc.png", "LaLiga"),
+        TeamData("Real Sociedad", "RSO", "logos/LaLiga/real-sociedad.football-logos.cc.png", "LaLiga"),
+        TeamData("Villarreal", "VIL", "logos/LaLiga/villarreal.football-logos.cc.png", "LaLiga"),
+        // Bundesliga
+        TeamData("FC Augsburg", "FCA", "logos/Bundesliga/augsburg.football-logos.cc.png", "Bundesliga"),
+        TeamData("Borussia Mönchengladbach", "BMG", "logos/Bundesliga/borussia-monchengladbach.football-logos.cc.png", "Bundesliga"),
+        TeamData("Eintracht Frankfurt", "SGE", "logos/Bundesliga/eintracht-frankfurt.football-logos.cc.png", "Bundesliga"),
+        TeamData("SC Freiburg", "SCF", "logos/Bundesliga/freiburg.football-logos.cc.png", "Bundesliga"),
+        TeamData("Hamburger SV", "HSV", "logos/Bundesliga/hamburger-sv.football-logos.cc.png", "Bundesliga"),
+        TeamData("TSG Hoffenheim", "TSG", "logos/Bundesliga/hoffenheim.football-logos.cc.png", "Bundesliga"),
+        TeamData("1. FC Köln", "KOE", "logos/Bundesliga/koln.football-logos.cc.png", "Bundesliga"),
+        TeamData("Mainz 05", "M05", "logos/Bundesliga/mainz-05.football-logos.cc.png", "Bundesliga"),
+        TeamData("SC Paderborn", "PAD", "logos/Bundesliga/paderborn.football-logos.cc.png", "Bundesliga"),
+        TeamData("RB Leipzig", "RBL", "logos/Bundesliga/rb-leipzig.football-logos.cc.png", "Bundesliga"),
+        TeamData("SV Elversberg", "ELV", "logos/Bundesliga/sv-elversberg.football-logos.cc.png", "Bundesliga"),
+        TeamData("Union Berlin", "FCU", "logos/Bundesliga/union-berlin.football-logos.cc.png", "Bundesliga"),
+        TeamData("VfB Stuttgart", "VFB", "logos/Bundesliga/vfb-stuttgart.football-logos.cc.png", "Bundesliga"),
+        TeamData("Werder Bremen", "SVW", "logos/Bundesliga/werder-bremen.football-logos.cc.png", "Bundesliga"),
+        // Serie A
+        TeamData("Atalanta", "ATA", "logos/SerieA/atalanta.football-logos.cc.png", "Serie A"),
+        TeamData("Bologna", "BOL", "logos/SerieA/bologna.football-logos.cc.png", "Serie A"),
+        TeamData("Cagliari", "CAG", "logos/SerieA/cagliari.football-logos.cc.png", "Serie A"),
+        TeamData("Como", "COM", "logos/SerieA/como-1907.football-logos.cc.png", "Serie A"),
+        TeamData("Fiorentina", "FIO", "logos/SerieA/fiorentina.football-logos.cc.png", "Serie A"),
+        TeamData("Frosinone", "FRO", "logos/SerieA/frosinone.football-logos.cc.png", "Serie A"),
+        TeamData("Genoa", "GEN", "logos/SerieA/genoa.football-logos.cc.png", "Serie A"),
+        TeamData("Lazio", "LAZ", "logos/SerieA/lazio.football-logos.cc.png", "Serie A"),
+        TeamData("Lecce", "LEC", "logos/SerieA/lecce.football-logos.cc.png", "Serie A"),
+        TeamData("Monza", "MON", "logos/SerieA/monza.football-logos.cc.png", "Serie A"),
+        TeamData("Parma", "PAR", "logos/SerieA/parma.football-logos.cc.png", "Serie A"),
+        TeamData("Sassuolo", "SAS", "logos/SerieA/sassuolo.football-logos.cc.png", "Serie A"),
+        TeamData("Torino", "TOR", "logos/SerieA/torino.football-logos.cc.png", "Serie A"),
+        TeamData("Udinese", "UDI", "logos/SerieA/udinese.football-logos.cc.png", "Serie A"),
+        TeamData("Venezia", "VEN", "logos/SerieA/venezia.football-logos.cc.png", "Serie A"),
+        // Ligue 1
+        TeamData("Angers", "ANG", "logos/Ligue1/angers.football-logos.cc.png", "Ligue 1"),
+        TeamData("Auxerre", "AUX", "logos/Ligue1/auxerre.football-logos.cc.png", "Ligue 1"),
+        TeamData("Brest", "BRE", "logos/Ligue1/brest.football-logos.cc.png", "Ligue 1"),
+        TeamData("Le Havre", "HAC", "logos/Ligue1/le-havre-ac.football-logos.cc.png", "Ligue 1"),
+        TeamData("Le Mans", "MCO", "logos/Ligue1/le-mans.football-logos.cc.png", "Ligue 1"),
+        TeamData("Lille", "LIL", "logos/Ligue1/lille.football-logos.cc.png", "Ligue 1"),
+        TeamData("Lorient", "LOR", "logos/Ligue1/lorient.football-logos.cc.png", "Ligue 1"),
+        TeamData("Nice", "NIC", "logos/Ligue1/nice.football-logos.cc.png", "Ligue 1"),
+        TeamData("Paris FC", "PFC", "logos/Ligue1/paris-fc.football-logos.cc.png", "Ligue 1"),
+        TeamData("RC Lens", "RCL", "logos/Ligue1/rc-lens.football-logos.cc.png", "Ligue 1"),
+        TeamData("RC Strasbourg", "RCS", "logos/Ligue1/rc-strasbourg-alsace.football-logos.cc.png", "Ligue 1"),
+        TeamData("Rennes", "REN", "logos/Ligue1/rennes.football-logos.cc.png", "Ligue 1"),
+        TeamData("Toulouse", "TFC", "logos/Ligue1/toulouse.football-logos.cc.png", "Ligue 1"),
+        TeamData("Troyes", "TRO", "logos/Ligue1/troyes.football-logos.cc.png", "Ligue 1"),
+        // Eredivisie
+        TeamData("ADO Den Haag", "ADO", "logos/Netherlands/ado-den-haag.football-logos.cc.png", "Eredivisie"),
+        TeamData("AZ Alkmaar", "AZ", "logos/Netherlands/az-alkmaar.football-logos.cc.png", "Eredivisie"),
+        TeamData("Excelsior Rotterdam", "EXC", "logos/Netherlands/excelsior-rotterdam.football-logos.cc.png", "Eredivisie"),
+        TeamData("FC Groningen", "GRO", "logos/Netherlands/fc-groningen.football-logos.cc.png", "Eredivisie"),
+        TeamData("FC Utrecht", "UTR", "logos/Netherlands/fc-utrecht.football-logos.cc.png", "Eredivisie"),
+        TeamData("Fortuna Sittard", "FOR", "logos/Netherlands/fortuna-sittard.football-logos.cc.png", "Eredivisie"),
+        TeamData("Go Ahead Eagles", "GAE", "logos/Netherlands/go-ahead-eagles.football-logos.cc.png", "Eredivisie"),
+        TeamData("NEC Nijmegen", "NEC", "logos/Netherlands/nec-nijmegen.football-logos.cc.png", "Eredivisie"),
+        TeamData("PEC Zwolle", "PEC", "logos/Netherlands/pec-zwolle.football-logos.cc.png", "Eredivisie"),
+        TeamData("SC Cambuur", "CAM", "logos/Netherlands/sc-cambuur.football-logos.cc.png", "Eredivisie"),
+        TeamData("SC Heerenveen", "HEE", "logos/Netherlands/sc-heerenveen.football-logos.cc.png", "Eredivisie"),
+        TeamData("Sparta Rotterdam", "SPA", "logos/Netherlands/sparta-rotterdam.football-logos.cc.png", "Eredivisie"),
+        TeamData("Telstar", "TEL", "logos/Netherlands/telstar.football-logos.cc.png", "Eredivisie"),
+        TeamData("Twente", "TWE", "logos/Netherlands/twente.football-logos.cc.png", "Eredivisie"),
+        TeamData("Willem II", "WIL", "logos/Netherlands/willem-ii.football-logos.cc.png", "Eredivisie"),
+        // Primeira Liga
+        TeamData("Académico de Viseu", "ACD", "logos/Portugal/academico-de-viseu.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Alverca", "ALV", "logos/Portugal/alverca.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Arouca", "ARO", "logos/Portugal/arouca.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Casa Pia", "CPC", "logos/Portugal/casa-pia-ac.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Estoril", "EST", "logos/Portugal/estoril.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Estrela da Amadora", "EAM", "logos/Portugal/estrela-da-amadora.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Famalicão", "FAM", "logos/Portugal/famalicao.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Gil Vicente", "GIL", "logos/Portugal/gil-vicente.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Marítimo", "MAR", "logos/Portugal/maritimo.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Moreirense", "MOR", "logos/Portugal/moreirense.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Nacional", "NAC", "logos/Portugal/nacional-da-madeira.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Rio Ave", "RAV", "logos/Portugal/rio-ave.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Santa Clara", "SCL", "logos/Portugal/santa-clara.football-logos.cc.png", "Primeira Liga"),
+        TeamData("SC Braga", "BRA", "logos/Portugal/sc-braga.football-logos.cc.png", "Primeira Liga"),
+        TeamData("Vitória de Guimarães", "VSC", "logos/Portugal/vitoria-de-guimaraes.football-logos.cc.png", "Primeira Liga"),
+        // LaLiga
+        TeamData("Deportivo Alavés", "ALA", "logos/LaLiga/deportivo.football-logos.cc.png", "LaLiga"),
+    )
+
+    val indexedTeams: List<Pair<Int, TeamData>> = allTeams.mapIndexed { idx, team -> idx to team }
+    val teamsByLeague: Map<String, List<Pair<Int, TeamData>>> = indexedTeams.groupBy { it.second.league }
+}

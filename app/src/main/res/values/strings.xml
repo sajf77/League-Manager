@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">League Manager</string>
+    <string name="title_activity_main">League Manager</string>
+    <string name="package_name">com.sajad.leaguemanager</string>
+    <string name="custom_url_scheme">com.sajad.leaguemanager</string>
+</resources>

@@ -1,0 +1,5 @@
+ext {
+    minSdk = 26
+    compileSdk = 35
+    targetSdk = 35
+}
